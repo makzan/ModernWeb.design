@@ -56,3 +56,9 @@ By default, the first tab content is displayed. When end user clicks on the 2nd 
 == Resources
 
 - http://code.jquery.com[jQuery Source]
+
+
+== Note
+
+- You may improve the styles with your own CSS.
+- You shouldn’t use jQuery UI.
