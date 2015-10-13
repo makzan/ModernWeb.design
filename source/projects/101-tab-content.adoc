@@ -1,0 +1,58 @@
+---
+id: 101
+title: Tab Content
+date: 2015-10-13
+tags: JavaScript, jQuery
+---
+
+In this project, we need you to build a tab content toggling component by using jQuery.
+
+Use jQuery to create a tab components. Required 3 tabs and 3 content.
+
+The 3 tabs are always shown.
+
+By default, the first tab content is displayed. When end user clicks on the 2nd tab or the 3rd tab, their related tab content displayed. All other tab content should not be visible except the active tab.
+
+== Starting Code
+
+[source,html]
+----
+<div class='tab-panel'>
+  <div class='tabs'> <!-- Tab navigation -->
+    <a href='#tab1'>Tab 1</a>
+    <a href='#tab2'>Tab 2</a>
+    <a href='#tab3'>Tab 3</a>
+  </div>
+  <!-- Starting of tab content -->
+  <div id='tab1' class='tab-content'>
+    <h2>Content of tab 1</h2>
+    <p>Content of tab 1 goes here.</p>
+    <p>More content for tab 1.</p>
+    <p>We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. </p>
+    <p>We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. </p>
+  </div>
+  <div id='tab2' class='tab-content'>
+    <h2>Content of tab 2</h2>
+    <p>Content of tab 2 goes here.</p>
+    <p>More content for tab 2.</p>
+    <p>We can also have image here. <br><img src='http://unsplash.it/300/300' alt='placeholder image'></p>
+    <p>We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. </p>
+  </div>
+
+  <div id='tab3' class='tab-content'>
+    <h2>Content of tab 3</h2>
+    <p>Content of tab 3 goes here.</p>
+    <p>More content for tab 3.</p>
+    <p>We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. </p>
+    <p>We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. We need a very long text here. So here we place some dummy text, very long dummy text. </p>
+  </div>
+  <!-- End of tab content -->
+</div>
+
+<hr>
+<p><small>This is a demo by Makzan. Created for the <a href='https://gum.co/jquery101'>Introducing jQuery</a> course.</small></p>
+----
+
+== Resources
+
+- http://code.jquery.com[jQuery Source]

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+    <link rel="stylesheet" href="/stylesheets/web.css">
+  </head>
+  <body>
+    <div class="page">
+
+      <article id="main" role="main">
+        <h1><a href='/'>Test Projects</a> / <%= current_article.title %></h1>
+
+        <%= yield %>
+
+        <h2>How to submit</h2>
+
+        <p>Once you finished your work, name your project <mark><%= current_article.data.id %>-(Your name)</mark> and zip it. Then upload to me via the following link:</p>
+
+        <p><a href='https://www.dropbox.com/request/yeH6ZT9yMKBOI59SyAoT'>Upload to Makzan</a></p>
+      </article>
+
+      <hr>
+
+      <p>Related Test Projects: <%= current_article.tags.map{|tag| link_to(tag, tag_path(tag)) }.join(', ') %>.</p>
+
+      <footer><a href='/'>Modern Web Design</a>—Hands on test projects to train web designers.</footer>
+    </div>
+
+  </body>
+</html>

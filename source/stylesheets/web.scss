@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+}
+
+.page {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+///////
+// basic color
+body {
+  background: #fbfbfb;
+  color: #222;
+}
+
+////////
+// typography
+
+body {
+  line-height: 1.45em;
+  font-family: "Gill Sans MT", sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+article {
+  font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Gill Sans MT", sans-serif;
+}
+h2, h3, h4 {
+  font-size: 100%;
+}
+
+
+//// Code and Code block
+code {
+  background: rgba(211, 241, 255, 0.5);
+  padding: 0.5em;
+  border-radius: 3px;
+}
+pre code {
+  background: none;
+  padding: 0;
+}
+
+pre {
+  background: #efefef;
+  padding: 1em;
+}
+
+// from: https://css-tricks.com/snippets/css/make-pre-text-wrap/
+pre,
+pre code {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+////////
+/// A link
+a {
+  &:link,
+  &:visited {
+    color: #222;
+    border-bottom: 1px solid rgba(62, 142, 198, 0.25);
+    box-shadow: inset 0 -5px rgba(62, 142, 198, 0.25);
+    text-decoration: none;
+
+    transition: all 0.3s ease-out;
+  }
+
+  footer &:link,
+  footer &:visited {
+    color: gray;
+  }
+
+
+  &:hover {
+    background: rgba(255, 255, 0, 1);
+  }
+}

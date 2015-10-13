@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+    <link rel="stylesheet" href="/stylesheets/web.css">
+  </head>
+  <body>
+
+    <div class="page">
+      <div id="main" role="main">
+        <%= yield %>
+      </div>
+
+      <footer><a href='/'>Modern Web Design</a>—Hands on test projects to train web designers.</footer>
+    </div>
+
+  </body>
+</html>
