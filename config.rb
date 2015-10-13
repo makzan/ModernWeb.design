@@ -104,6 +104,21 @@ configure :build do
   activate :directory_indexes
 end
 
+after_build do |builder|
+  FileUtils.cp_r 'public/.', 'build'
+
+  # check diff.
+  # result = %x(diff -r build last_build)
+  # if result.size > 0
+    # deploy
+    # exec("middleman deploy")
+  # end
+
+  # new last_build from current build.
+  # FileUtils.rm_r 'last_build'
+  # FileUtils.cp_r 'build', 'last_build'
+end
+
 
 activate :syntax, :line_numbers => true
 # set :markdown_engine, :redcarpet

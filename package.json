@@ -1,0 +1,8 @@
+{
+  "name": "modernwebdesign",
+  "version": "1.0.0",
+  "description": "modernwebdesign",
+  "devDependencies": {
+    "surge": "^0.15.0"
+  }
+}
