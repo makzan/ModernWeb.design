@@ -62,3 +62,9 @@ By default, the first tab content is displayed. When end user clicks on the 2nd 
 
 - You may improve the styles with your own CSS.
 - You shouldn’t use jQuery UI.
+
+== Further Challenges
+
+Try to create 5 different themes by using different CSS styles.
+
+
