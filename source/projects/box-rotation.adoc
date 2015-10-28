@@ -1,0 +1,11 @@
+In this project, you need to create a box rotation effect. 
+
+This effect is often seen at presentation transition. Amazon also uses this effect to demonstrate the book cover and back page:
+
+TODO: Insert GIF image of keynote transition
+
+TODO: Insert GIF image of Amazon book rotation 
+
+== Tips
+
+- You can't use percentages value in z-axis of transition origin. 

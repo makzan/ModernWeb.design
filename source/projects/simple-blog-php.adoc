@@ -1,0 +1,5 @@
+In this project, you need to create a simple blog system by using PHP and MySQL. 
+
+Note:
+
+You cannot use any PHP framework. 
